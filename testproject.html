@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        .project {
+            background-color: #282828;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .project h2 {
+            margin-bottom: 1rem;
+        }
+
+        .project p {
+            margin-bottom: 1rem;
+        }
+
+        .project a {
+            color: #00b0ff;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #00b0ff;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #009bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROJECTS</h1>
+
+    <div class="project">
+        <h2><a href="#">anicard</a></h2>
+        <p>Create simple cards with anime information and cover on it.</p>
+        <p><a href="#">Javascript</a> <a href="#">CSS</a> <a href="#">HTML</a></p>
+    </div>
+
+    <div class="project">
+        <h2><a href="#">catnapping</a></h2>
+        <p>A website with cats</p>
+        <p><a href="#">Svelte</a> <a href="#">Tailwind</a> <a href="#">Vite</a></p>
+    </div>
+
+    <div class="project">
+        <h2><a href="#">plainfolio</a></h2>
+        <p>A plain portfolio template (this)</p>
+        <p><a href="#">HTML</a> <a href="#">CSS</a> <a href="#">Vite</a></p>
+    </div>
+
+    <button class="button">more at GITHUB</button>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="shortcut icon" href="./img/Service-img/pwn.png" type="image/x-icon">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap 4 css link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- owl-carousel link  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Main css Link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom {
+            background-color: rgba(255, 255, 255, 0); /* Transparan */
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .credit {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .credit a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .image-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .partner-text {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+   <!-- blog section end here  -->
+<footer class="text-white" style="background-color: #1c1c1c; padding: 40px 0;">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information Section -->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="service_section_title">
+                    <h6 style="color: #ffcc00;">Contact Us</h6>
+                    <h3 style="color: #ffffff;">Get In Touch</h3>
+                </div>
+                <div class="small_des">
+                    <p style="color: #b3b3b3;">
+                        PT. Pwn0sec Technologies adalah perusahaan konsultan keamanan siber yang berfokus pada layanan pengujian penetrasi, penemuan kerentanan, dan forensik digital...
+                    </p>
+                </div>
+                <div class="Address_section d-flex justify-content-between">
+                    <div class="home d-flex">
+                        <div class="address_icon">
+                            <i class="fas fa-home" style="color: #ffcc00;"></i>
+                        </div>
+                        <div class="address" style="color: #b3b3b3; margin-left: 10px;">
+                            <h6 style="color: #ffffff;">Jakarta Office</h6>
+                            <p>Jl. Sultan Iskandar Muda, Kebayoran Lama<br/> Jakarta Selatan - 12240</p>
+                        </div>
+                    </div>
+                    <div class="home d-flex">
+                        <div class="address_icon">
+                            <i class="fas fa-home" style="color: #ffcc00;"></i>
+                        </div>
+                        <div class="address" style="color: #b3b3b3; margin-left: 10px;">
+                            <h6 style="color: #ffffff;">Surabaya Office</h6>
+                            <p>Jl. Ploso Timur IV<br/> Jawa Timur - 60133</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Address_section d-flex justify-content-between">
+                    <div class="home d-flex">
+                        <div class="address_icon">
+                            <i class="fas fa-phone-volume" style="color: #ffcc00;"></i>
+                        </div>
+                        <div class="address" style="color: #b3b3b3; margin-left: 10px;">
+                            <h6 style="color: #ffffff;">WhatsApp Us</h6>
+                            <p>(+62)888 802 2526</p>
+                        </div>
+                    </div>
+                    <div class="home d-flex">
+                        <div class="address_icon">
+                            <i class="far fa-envelope" style="color: #ffcc00;"></i>
+                        </div>
+                        <div class="address" style="color: #b3b3b3; margin-left: 10px;">
+                            <h6 style="color: #ffffff;">Email Address</h6>
+                            <p>support@pwn0sec.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required style="border-radius: 5px; padding: 10px;">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required style="border-radius: 5px; padding: 10px;">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Your Subject" required style="border-radius: 5px; padding: 10px;">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message..." required style="border-radius: 5px; padding: 10px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn common_button" style="background-color: #ffcc00; color: #1c1c1c; border: none; padding: 10px 20px; border-radius: 5px;">Send Message</button>
+                    <button type="button" class="btn common_button" onclick="sendWhatsApp()" style="background-color: #25D366; color: #ffffff; border: none; padding: 10px 20px; border-radius: 5px; margin-top: 10px;">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Styles -->
+<style>
+    .form-control {
+        width: 100%;
+        background-color: #333333;
+        border: 1px solid #ffcc00;
+        color: #ffffff;
+    }
+
+    .form-control:focus {
+        border-color: #ffcc00;
+        box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+        outline: none;
+    }
+
+    .common_button:hover {
+        background-color: #333333;
+        color: #ffcc00;
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        if (name == "" || email == "" || subject == "" || message == "") {
+            alert("All fields are required.");
+            return false;
+        } else {
+            alert("Your message has been sent!");
+            return true;
+        }
+    }
+
+    function sendWhatsApp() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        if (name == "" || email == "" || subject == "" || message == "") {
+            alert("Please fill out all fields before sending via WhatsApp.");
+            return;
+        }
+
+        // Buat isi pesan yang akan dikirimkan melalui WhatsApp
+        var whatsappMessage = "Hello, my name is " + name + ".\n\n"
+                            + "Email: " + email + "\n"
+                            + "Subject: " + subject + "\n\n"
+                            + "Message:\n" + message;
+
+        // Encode pesan agar bisa dibaca di URL
+        var encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Nomor WhatsApp tujuan (di sini +62888022526 sebagai contoh)
+        var phoneNumber = "+12019921015";
+
+        // Buat URL WhatsApp API
+        var whatsappUrl = "https://wa.me/+12019921015" + phoneNumber + "?text=" + encodedMessage;
+
+        // Buka WhatsApp di tab baru atau di aplikasi mobile
+        window.open(whatsappUrl, '_blank');
+    }
+</script>
+
+<!-- Konten Halaman -->
+
+<div class="bottom">
+    <span class="credit">Created By <a href="https://pwn0sec.com">PT. Pwn0sec Digital Technologies Ltd.</a></span>
+    <div class="copyright">
+        <span class="far fa-copyright"></span> 2024 All rights reserved.
+    </div>
+
+    <div class="image-container">
+        <img src="img/brand/pse-terdaftar.png" alt="Partner Logo">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <!-- JQuery file  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Popper Js -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap File -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- font awesome link  -->
+    <script src="./js/all.min.js"></script>
+    <!-- Type js link  -->
+    <script src="./js/typed.js"></script>
+    <!-- counter up js  -->
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.js"></script>
+    <!-- owl carousel link  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

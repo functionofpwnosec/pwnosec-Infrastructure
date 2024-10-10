@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwn0sec Technologies Ltd</title>
+    <link rel="shortcut icon" href="./img/Logo/zz.png" type="image/x-icon">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap 4 css link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- owl-carousel link  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Main css Link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom {
+            background-color: rgba(255, 255, 255, 0); /* Transparan */
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .credit {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .credit a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .image-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .partner-text {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section Start  -->
+    <header class="Header_section">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/Logo/pwnlab.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#Menu_bar" 
+                    aria-expanded="false">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="Menu_bar">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://hackerboard.pwn0sec.com">Hackerboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Our Services <i class="fas fa-angle-down ml-1"></i></a>
+                            <ul>
+                                <li><a href="security-assesment.html">Security Assessment</a></li>
+                                <li><a href="cybercrime-investigation.html">Cyber Crime Investigation</a></li>
+                                <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                <li><a href="osint-as-a-services.html">OSINT Investigation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research <i class="fas fa-angle-down ml-1"></i></a>
+                            <ul>
+                                <li><a href="blog.pwn0sec.com">Writeup</a></li>
+                                <li><a href="discord.pwn0sec.com">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="Button">
+                        <a href="#" class="btn common_button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section End  -->
+    <div class="problem-fix"></div>
+    <section class="page_title text-center">
+        <h1 class="display-6">
+            <span style="color: white; font-weight: bold;">Pwn0sec</span>
+            <span style="color: rgb(100, 18, 121); font-weight: bold;">Penetration Testing</span> 
+        </h1>        
+    </section>
+    <!-- line animation section Start -->
+    <section class="animate_line_sectine mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="animate_line">
+                        <div class="animated_ball"></div>
+                        <div class="animated_ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- line animation section end -->
+   <!-- Service section Start -->
+<section class="Service_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/pen.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Web Application Penetration Testing</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Kami mengevaluasi keamanan aplikasi web Anda dengan teknik manual dan otomatis untuk menemukan kerentanan seperti SQL Injection, Cross-Site Scripting (XSS), Remote Code Executions (RCE) dan kerentanan otentikasi zeroday. Tes ini dirancang untuk memastikan aplikasi Anda aman dari potensi serangan yang dapat mengekspos data sensitif atau merusak integritas sistem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/network.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Network Penetration Testing</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Layanan ini fokus pada pengujian keamanan infrastruktur jaringan Anda, termasuk sistem, perangkat keras, dan konfigurasi jaringan. Kami menilai kerentanannya terhadap serangan dari luar dan dalam, mengidentifikasi titik lemah yang bisa dimanfaatkan oleh peretas untuk mendapatkan akses tidak sah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/mbe.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Mobile Application Penetration Testing</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Kami menguji aplikasi mobile Anda di berbagai platform (iOS, Android) untuk menemukan kerentanan yang mungkin terjadi pada aplikasi atau komunikasi data. Kami memastikan aplikasi Anda tahan terhadap serangan yang bisa mengancam privasi pengguna dan keamanan data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/soc.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Social Engineering Testing</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Layanan ini menilai seberapa rentan organisasi Anda terhadap teknik manipulasi sosial yang digunakan oleh penyerang untuk mengecoh karyawan atau pengguna. Kami melakukan simulasi phishing, pretexting, dan baits untuk mengidentifikasi kekuatan dan kelemahan dalam kesadaran keamanan di tempat kerja.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="service_card">
+                <div class="service_heading">
+                    <div class="service_img">
+                        <img src="./img/section/api.svg" class="img-fluid" alt="card_img">
+                    </div>
+                    <div class="services_title">
+                        <h3>API Penetration Testing</h3>
+                    </div>
+                </div>
+                <div class="services_description">
+                    <p>Kami memeriksa keamanan antarmuka pemrograman aplikasi (API) Anda untuk menemukan potensi kelemahan yang dapat dieksploitasi. Dengan fokus pada endpoint dan komunikasi API, kami memastikan bahwa data dan proses yang diakses melalui API tetap terlindungi dari serangan yang bisa mengkompromikan aplikasi Anda.</p>
+                </div>
+            </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="service_card">
+            <div class="service_heading">
+                <div class="service_img">
+                    <img src="./img/section/cloud.svg" class="img-fluid" alt="card_img">
+                </div>
+                <div class="services_title">
+                    <h3>Cloud Security Testing</h3>
+                </div>
+            </div>
+            <div class="services_description">
+                <p>Layanan ini mengevaluasi keamanan lingkungan cloud Anda, termasuk konfigurasi, akses, dan data yang disimpan. Kami mengidentifikasi risiko potensial dalam arsitektur cloud Anda, memastikan bahwa penyimpanan dan proses cloud tidak rentan terhadap serangan dan pelanggaran data.</p>
+            </div>
+        </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="service_card">
+        <div class="service_heading">
+            <div class="service_img">
+                <img src="./img/section/soc.png" class="img-fluid" alt="card_img">
+            </div>
+            <div class="services_title">
+                <h3>IoT Security Testing</h3>
+            </div>
+        </div>
+        <div class="services_description">
+            <p>Kami menguji perangkat Internet of Things (IoT) Anda untuk memastikan keamanan perangkat dan komunikasi mereka. Dengan mengidentifikasi kerentanan dalam perangkat IoT, firmware, dan jaringan yang terhubung, kami membantu melindungi dari risiko yang terkait dengan penggunaan dan integrasi perangkat pintar.</p>
+        </div>
+    </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="service_card">
+        <div class="service_heading">
+            <div class="service_img">
+                <img src="./img/section/soc.png" class="img-fluid" alt="card_img">
+            </div>
+            <div class="services_title">
+                <h3>Social Media Security Testing</h3>
+            </div>
+        </div>
+        <div class="services_description">
+            <p>Kami menganalisis keamanan akun dan strategi media sosial Anda, mencari potensi risiko yang dapat membahayakan reputasi dan data perusahaan Anda. Layanan ini melibatkan pemantauan terhadap potensi serangan seperti phising atau manipulasi sosial yang menargetkan platform media sosial.</p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Service section end -->
+
+         <!-- Our Services  -->
+         <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInLeft">
+                        <img src="./img/Service-img/pentest.gif" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight">
+                        <div class="service_section_title">
+                            <h6>Beat Hackers at Their Own Game</h6>
+                        </div>
+                        <div class="small_des">
+                            <p>Our team are leaders in the practice of penetration testing, well versed in the nature of the various types of cyberattack including brute force and hacking.</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                                <div class="small_card_description">
+                                    <p>Penetration Tester, juga dikenal sebagai peretasan etis, adalah cara untuk menguji titik lemah dalam solusi keamanan Anda dengan meniru tindakan yang digunakan oleh penyerang jarak jauh. Dengan mencoba yang terbaik untuk menerobos solusi keamanan Anda yang berbeda, tim penguji penetrasi kami akan dapat menunjukkan dengan jelas area mana yang perlu ditingkatkan atau kelemahan mana yang menimbulkan risiko.</p>
+                                </div>
+                            </div>
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="" class="img-fluid" alt="">
+                                </div>
+                                <div class="service_section_title">
+                                    <h6>Our Unique Process</h6>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Pada intinya, kami percaya bahwa pengujian penetrasi yang efektif lebih dari sekadar mengidentifikasi kerentanan-ini adalah tentang memberikan wawasan yang dapat ditindaklanjuti untuk meningkatkan postur keamanan Anda. Proses kami dirancang dengan presisi, transparansi, dan efisiensi, memastikan bahwa setiap pengujian memberikan nilai yang nyata.</p>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>1. <strong>Tailored Approach:</strong> Kami memulai dengan memahami lanskap bisnis, tujuan, dan kebutuhan keamanan unik Anda. Setiap penugasan dirancang untuk mengatasi ancaman dan tantangan spesifik yang relevan dengan organisasi Anda.</p>
+                                
+                                    <p>2. <strong>Comprehensive Reconnaissance:</strong> Tim ahli kami melakukan rekonsiliasi mendalam untuk memetakan seluruh jejak digital Anda. Kami menilai permukaan serangan Anda, memeriksa setiap titik masuk potensial untuk memastikan tidak ada yang terlewatkan.</p>
+                                
+                                    <p>3. <strong>Real-World Attack Simulation:</strong> Menggunakan alat canggih dan teknik manual, kami mensimulasikan skenario serangan nyata. Kami menggabungkan pemindaian otomatis dengan keahlian manusia untuk menemukan kerentanan tersembunyi yang sering terlewat oleh pemindai tradisional.</p>
+                                
+                                    <p>4. <strong>Risk Analysis and Prioritization:</strong> Setelah kerentanan diidentifikasi, kami menilai risiko terkait. Kami memprioritaskan temuan berdasarkan dampak dan kemungkinan eksploitasi, memberikan Anda peta jalan yang jelas untuk perbaikan.</p>
+                                
+                                    <p>5. <strong>Detailed Reporting and Consultation:</strong> Laporan rinci kami tidak hanya mencantumkan kerentanan, tetapi juga memberikan rekomendasi yang dapat ditindaklanjuti. Kami memastikan Anda memahami aspek teknis dan dampak bisnis potensial, bekerja sama dengan tim Anda untuk menerapkan solusi yang efektif.</p>
+                                
+                                    <p>6. <strong>Continuous Support and Reassessment:</strong> Keamanan adalah proses berkelanjutan. Kami menawarkan dukungan pasca-penugasan untuk menjawab pertanyaan, membantu dengan upaya perbaikan, dan melakukan pengujian lanjutan untuk memastikan sistem Anda tetap aman seiring waktu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn common_button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft">
+                        <div class="service_section_title">
+                            <h3>What is Penetration Testing?</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>Pengujian penetrasi, sering disebut sebagai “pen testing”, adalah metode yang digunakan untuk mengevaluasi keamanan sistem, jaringan, atau aplikasi organisasi dengan mensimulasikan serangan di dunia nyata. Proses peretasan etis ini mengidentifikasi kerentanan yang dapat dieksploitasi oleh aktor jahat dan memberikan wawasan tentang cara mengatasinya sebelum dapat digunakan untuk mengkompromikan data atau sistem yang sensitif. Penguji pena menggunakan kombinasi alat otomatis dan teknik manual untuk meniru cara penyerang menembus pertahanan Anda, sehingga membantu Anda selangkah lebih maju dari potensi ancaman.</p>
+                        </div>
+                        <div class="service_section_title">
+                            <h3>Why Do I Need It?</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>Dalam lingkungan digital yang serba cepat saat ini, ancaman terus berkembang. Pengujian penetrasi sangat penting untuk memastikan bahwa langkah-langkah keamanan organisasi Anda kuat dan efektif. Dengan mengidentifikasi dan memperbaiki kerentanan secara proaktif, Anda dapat mencegah pelanggaran data yang merugikan, melindungi reputasi Anda, dan menjaga kepatuhan terhadap standar industri. Pengujian pena tidak hanya memperkuat postur keamanan Anda, tetapi juga memberikan ketenangan pikiran, karena mengetahui bahwa bisnis Anda terlindungi dari serangan siber.</p>
+                            <p>Di Indonesia, regulasi terkait kebocoran data diatur dalam beberapa pasal penting, seperti yang tercantum dalam tabel berikut:</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                            <div class="small_card">
+                              
+                            </div>
+                        </div>
+                        <a href="run.html" class="btn common_button">Landasan Hukum Pelindungan Data Pribadi</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInRight">
+                        <img src="./img/Service-img/m3.gif" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our services  -->
+        <section class="All_services_section text-center text-white mt-5 pt-5">
+            <div class="Service_section_title">
+                <h6>With Our Pentesting Services, We’ll Help You Identify:</h6>
+                <h1>What We Offer</h1>
+            </div>
+           <div class="container">
+               <div class="row All_services">
+                   <div class="col-lg-6 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInLeft">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S1.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Web Application Penetration Testing</h1>
+                               <p>Aplikasi web merupakan titik masuk utama bagi serangan siber. Kami menawarkan layanan penetration testing aplikasi web yang komprehensif untuk mengidentifikasi kerentanan kritis seperti SQL Injection, Cross-Site Scripting (XSS), dan masalah otentikasi yang bisa mengancam keamanan aplikasi Anda. Dengan pendekatan yang meliputi teknik manual dan otomatis, kami memastikan bahwa aplikasi Anda tidak hanya aman tetapi juga dapat mengatasi serangan yang paling canggih. Tim kami melakukan pengujian yang mendalam untuk mengevaluasi semua aspek aplikasi, termasuk input pengguna, sesi, dan mekanisme otorisasi, guna memastikan perlindungan optimal terhadap data sensitif dan transaksi.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="redteam.html" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInDown">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S2.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Network Penetration Testing</h1>
+                               <p>Keamanan jaringan adalah fondasi utama dalam melindungi organisasi Anda dari ancaman eksternal dan internal. Layanan network penetration testing kami dirancang untuk mengidentifikasi titik lemah dalam infrastruktur jaringan Anda, termasuk konfigurasi yang salah, perangkat yang rentan, dan celah keamanan lainnya. Kami melakukan pengujian yang menyeluruh untuk mengevaluasi segala sesuatu mulai dari firewall, router, dan switch hingga konfigurasi keamanan jaringan. Dengan simulasi serangan dari luar dan dalam, kami memberikan laporan terperinci tentang potensi risiko dan rekomendasi untuk memperkuat pertahanan Anda.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInRight">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S3.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Mobile Application Penetration Testing</h1>
+                               <p>Dengan meningkatnya penggunaan aplikasi mobile, keamanan aplikasi di perangkat mobile menjadi sangat penting. Layanan kami mencakup pengujian menyeluruh untuk aplikasi mobile di platform iOS dan Android, mengidentifikasi kerentanan yang dapat mengancam privasi pengguna dan keamanan data. Kami mengevaluasi keamanan aplikasi dari berbagai aspek, termasuk penyimpanan data, komunikasi jaringan, dan mekanisme autentikasi. Dengan mengidentifikasi potensi risiko dan kerentanan, kami membantu memastikan bahwa aplikasi Anda aman untuk pengguna dan dapat menahan serangan yang mungkin terjadi.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                       </div>
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Social Engineering Testing</h1>
+                                <p>Teknik manipulasi sosial sering kali digunakan oleh penyerang untuk mengecoh karyawan dan memperoleh akses tidak sah. Layanan social engineering testing kami mengevaluasi seberapa rentan organisasi Anda terhadap berbagai teknik manipulasi sosial seperti phishing, pretexting, dan baits. Kami melakukan simulasi serangan untuk menguji kesadaran keamanan karyawan dan efektivitas kebijakan keamanan yang ada. Dengan memberikan pelatihan dan rekomendasi yang sesuai, kami membantu memperkuat pertahanan manusia di organisasi Anda dan mengurangi risiko yang terkait dengan teknik manipulasi sosial.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>API Penetration Testing</h1>
+                                <p>Antarmuka pemrograman aplikasi (API) sering kali menjadi target utama serangan karena mereka menyediakan akses langsung ke data dan fungsi aplikasi. Layanan API penetration testing kami mengidentifikasi kerentanan pada endpoint API dan komunikasi, memastikan bahwa data dan fungsi yang diakses melalui API tetap terlindungi. Kami melakukan pengujian untuk mengevaluasi aspek-aspek seperti otentikasi, otorisasi, dan validasi input, serta memastikan bahwa API Anda aman dari serangan yang dapat mengekspos data atau merusak integritas sistem.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Cloud Security Testing</h1>
+                                <p>Lingkungan cloud menawarkan fleksibilitas dan skalabilitas yang besar, tetapi juga membawa tantangan keamanan yang unik. Layanan cloud security testing kami mengevaluasi konfigurasi cloud Anda, akses, dan penyimpanan data untuk mengidentifikasi risiko potensial dan kelemahan. Kami memastikan bahwa sistem cloud Anda tidak rentan terhadap pelanggaran data, serangan, atau konfigurasi yang salah. Dengan analisis yang mendalam dan solusi yang disesuaikan, kami membantu Anda mengelola risiko dan menjaga keamanan lingkungan cloud Anda.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>IoT Security Testing</h1>
+                                <p>Internet of Things (IoT) semakin menjadi bagian integral dari banyak organisasi, tetapi perangkat IoT juga menghadapi risiko keamanan yang signifikan. Layanan IoT security testing kami mengidentifikasi kerentanan dalam perangkat dan komunikasi IoT, memastikan bahwa sistem dan data Anda terlindungi dari serangan. Kami mengevaluasi aspek seperti firmware, komunikasi, dan konfigurasi perangkat untuk menemukan potensi risiko dan memberikan rekomendasi untuk meningkatkan keamanan IoT Anda.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Social Media Security Testing</h1>
+                                <p>Media sosial adalah platform penting untuk interaksi dan promosi, tetapi juga bisa menjadi target bagi penyerang yang ingin membahayakan reputasi atau mendapatkan data sensitif. Layanan social media security testing kami menganalisis potensi risiko dan kelemahan di platform media sosial Anda, termasuk akun dan strategi media sosial. Kami mencari celah yang dapat dimanfaatkan oleh penyerang untuk mengakses data atau merusak reputasi perusahaan Anda, serta memberikan rekomendasi untuk mengamankan kehadiran media sosial Anda.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- section end  -->
+    <section class="new_section my-5" style="background-image: url(./img/Hacker/Group-1154.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section_overlay text-center">
+                        <h1>Do you want to secure wisely?</h1>
+                        <p>Contact our team experts now!</p>
+                        <a href="#" class="btn common_button">Leave us a Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end  -->
+
+
+    <!-- line animation section Start -->
+    <section class="animate_line_sectine mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="animate_line">
+                        <div class="animated_ball"></div>
+                        <div class="animated_ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- line animation section end -->
+
+<!-- Konten Halaman -->
+
+<div class="bottom">
+    <span class="credit">Created By <a href="https://pwn0sec.com">PT. Pwn0sec Digital Technologies Ltd.</a></span>
+    <div class="copyright">
+        <span class="far fa-copyright"></span> 2024 All rights reserved.
+    </div>
+
+    <div class="image-container">
+        <img src="img/brand/pse-terdaftar.png" alt="Partner Logo">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    <!-- JQuery file  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Popper Js -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap File -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- font awesome link  -->
+    <script src="./js/all.min.js"></script>
+    <!-- Type js link  -->
+    <script src="./js/typed.js"></script>
+    <!-- counter up js  -->
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.js"></script>
+    <!-- owl carousel link  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
