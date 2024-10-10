@@ -1,0 +1,1131 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pwn0sec</title>
+        <link rel="shortcut icon" href="./img/Service-img/sh1.png" type="image/x-icon">
+        <!-- font awesome link  -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <!-- bootstrap 4 css link  -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- owl-carousel link  -->
+        <link rel="stylesheet" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+        <!-- animate css  -->
+        <link rel="stylesheet" href="./css/animate.css">
+        <!-- Main css Link  -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- responsive css  -->
+        <link rel="stylesheet" href="./css/responsive.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .bottom {
+                background-color: rgba(255, 255, 255, 0); /* Transparan */
+                padding: 20px 0;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+            }
+    
+            .credit {
+                font-size: 14px;
+                color: #333;
+            }
+    
+            .credit a {
+                color: #e74c3c;
+                text-decoration: none;
+                font-weight: bold;
+            }
+    
+            .credit a:hover {
+                text-decoration: underline;
+            }
+    
+            .copyright {
+                font-size: 12px;
+                margin-top: 5px;
+                color: #666;
+            }
+    
+            .image-container {
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+    
+            .image-container img {
+                max-width: 100px;
+                height: auto;
+                object-fit: contain;
+            }
+    
+            .partner-text {
+                font-size: 14px;
+                font-weight: bold;
+                color: #333;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+   <body>
+    <section>
+        <h1>Welcome to Private Website</h1>
+        <p id="access-message">Checking access...</p>
+
+
+        <!-- Header section Start  -->
+        <header class="Header_section">
+            <nav class="navbar navbar-expand-md fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./img/Logo/pwn.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#Menu_bar" 
+                        aria-expanded="false">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Menu_bar">
+                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://hackerboard.pwn0sec.com">Hackerboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Our Services <i class="fas fa-angle-down ml-1"></i></a>
+                                <ul>
+                                    <li><a href="security-assesment.html">Security Assessment</a></li>
+                                    <li><a href="cybercrime-investigation.html">Cyber Crime Investigation</a></li>
+                                    <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                    <li><a href="osint-as-a-services.html">OSINT Investigation</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Research <i class="fas fa-angle-down ml-1"></i></a>
+                                <ul>
+                                    <li><a href="blog.pwn0sec.com">Writeup</a></li>
+                                    <li><a href="private.pwn0sec.com">Private Project</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="Button">
+                            <a href="#" class="btn common_button">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header section End  -->
+        <section class="banner_section" id="Home">
+            <div class="banner">
+                <div class="container">
+                    <div class="row banner_content">
+                        <div class="col-lg-6 col-md-6 col-sm-12 heading_content_section">
+                            <div class="heading_content wow bounceInLeft">
+                                <h1>Professional <span class="type_content type"></span></h1>
+                                <h1>With Reliable Service</h1>
+                                <p>Dalam hal perlindungan aset bisnis dan informasi anda, kami menggunakan penilaian keamanan anda untuk memberi anda cara terbaik untuk memastikan bahwa anda aman dengan bijak. Kami menawarkan layanan premium yang menggunakan analisis intrusi multi-segi, forensik digital, respons insiden, dan pengujian kepatuhan untuk memastikan bisnis Anda terlindungi sepanjang waktu. Jangan pernah tertangkap tanpa keamanan komprehensif yang dapat ditawarkan oleh tim cyber kami yang sangat berpengalaman kepada Anda.</p>
+                                <a href="#" class="btn common_button">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 banner-img-section">
+                            <div class="banner-img wow bounceInRight">
+                                <img src="./img/slider-img/ban.gif" class="img-fluid" alt="banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- line animation section Start -->
+        <section class="animate_line_sectine mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="animate_line">
+                            <div class="animated_ball"></div>
+                            <div class="animated_ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- line animation section end -->
+        <!-- Service section Start -->
+        <section class="Service_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service_card wow bounceInDown">
+                            <div class="service_heading">
+                                <div class="service_img">
+                                    <img src="./img/section/security-1.png" class="img-fluid" alt="card_img">
+                                </div>
+                                <div class="services_title">
+                                    <h3>High Quality Security and OWASP Understanding</h3>
+                                </div>
+                            </div>
+                            <div class="services_description">
+                                <p>Kami menyediakan satuan team pengamanan PenetrationTester Profesional dan berkualitas yang telah lulus seleksi rekruitmen yang sangat ketat dan dibekali dengan Open Web Application Security Project (OWASP) dalam menjalankan tugas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service_card wow bounceInUp">
+                            <div class="service_heading">
+                                <div class="service_img">
+                                    <img src="./img/section/privacy.png" class="img-fluid" alt="card_img">
+                                </div>
+                                <div class="services_title">
+                                    <h3>Reduce Risk with Expert Security Controls</h3>
+                                </div>
+                            </div>
+                            <div class="services_description">
+                                <p>Tim kami akan membantu menerapkan berbagai kontrol keamanan untuk mengurangi risiko keamanan yang telah kami identifikasi, Layanan "RRESC" kami adalah solusi komprehensif yang dirancang untuk membantu organisasi dan individu dalam melindungi aset digital mereka secara efektif. Dalam lanskap ancaman yang terus berkembang saat ini, memastikan keamanan yang kuat adalah hal yang paling penting untuk mengurangi risiko dan menjaga integritas data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service_card wow bounceInDown">
+                            <div class="service_heading">
+                                <div class="service_img">
+                                    <img src="./img/section/certified-industry.png" class="img-fluid" alt="card_img">
+                                </div>
+                                <div class="services_title">
+                                    <h3>Penetration Testing and Expertise in Cyber Attacks</h3>
+                                </div>
+                            </div>
+                            <div class="services_description">
+                                <p>Tim kami adalah pemimpin dalam praktik pengujian penetrasi, berpengalaman dalam berbagai jenis serangan siber termasuk Exploitation CVE/CWE dan peretasan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service section end -->
+        <!-- Brand section Start -->
+        <section>
+            <div class="container">
+                <div class="section_title text-center py-4 mt-5">
+                    <h3 class=" text-white"><span class="big_font">Our Certification </span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="Brand_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="brand_img wow bounceInUp">
+                            <img src="./img/brand/osce.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="brand_img wow bounceInDown">
+                            <img src="./img/brand/oscp.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="brand_img wow bounceInUp">
+                            <img src="./img/brand/osee.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="brand_img wow bounceInDown">
+                            <img src="./img/brand/oswe.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="brand_img wow bounceInDown">
+                            <img src="./img/brand/crto.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand section End -->
+        <!-- line animation section Start -->
+        <section class="animate_line_sectine mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="animate_line">
+                            <div class="animated_ball"></div>
+                            <div class="animated_ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- line animation section end -->
+        <!-- Our Services  -->
+        <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInLeft">
+                        <img src="./img/Service-img/pw.gif" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight">
+                        <div class="service_section_title">
+                            <h6>Welcome To Pwn0sec</h6>
+                            <h3>The Perfect Solution For All The Protection Question</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>PT. Pwn0sec Technologies fokus menciptakan alat-alat teknologi terbaru yang belum ada di dunia dan kami memberikan layanan untuk keamanan website atau aplikasi agar aman dari serangan atau kerentanan yang terjadi.</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="./img/Service-img/icon.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="small_heading">
+                                    <h4>High Quality Service</h4>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Konsultan keamanan kami memiliki sertifikasi tingkat tertinggi untuk keamanan siber, termasuk sertifikasi OSEE keamanan ofensif.</p>
+                                </div>
+                            </div>
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="./img/Service-img/icon2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="small_heading">
+                                    <h4>Effective Protection</h4>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Kami terus melayani untuk mendeteksi dan memahami setiap potensi peristiwa keamanan siber, terutama yang ditujukan untuk akses berbahaya.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn common_button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft">
+                        <div class="service_section_title">
+                            <h6>Why Choose Us</h6>
+                            <h3>Greetings from our team</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>PT. Pwn0sec Technologies adalah perusahaan konsultan keamanan siber yang berfokus pada layanan pengujian penetrasi, penemuan kerentanan, dan forensik digital. Kami telah konsisten dalam memberikan keamanan informasi yang inovatif dan berkualitas tinggi, layanan dan solusi keamanan siber yang sesuai dengan lanskap ancaman siber yang terus berkembang. Kami memberikan layanan kami kepada klien di Indonesia pada khususnya, dan dunia pada umumnya. Beragam klien yang kami tangani mulai dari sektor swasta seperti keuangan dan perbankan, hingga sektor seperti militer, instansi pemerintah dan kepolisian, dan hingga sektor energi seperti minyak dan gas, dan pertambangan.</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="./img/Service-img/group2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="small_heading">
+                                    <h4>Standardized Methodology</h4>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Metodologi keamanan siber kami dicoba dan diuji untuk menciptakan pengalaman keamanan yang sukses secara uniformly untuk semua klien kami.</p>
+                                </div>
+                            </div>
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="./img/Service-img/group.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="small_heading">
+                                    <h4>Highly Qualified Consultants</h4>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Konsultan keamanan kami memiliki sertifikasi tingkat tertinggi untuk keamanan siber, termasuk sertifikasi OSEE keamanan ofensif.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn common_button">Learn More</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInRight">
+                        <img src="./img/Service-img/m3.gif" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our services  -->
+            <!-- line animation section Start -->
+        <section class="animate_line_sectine mb-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="animate_line">
+                            <div class="animated_ball"></div>
+                            <div class="animated_ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- line animation section end -->
+        <!-- About Us  -->
+        <section class="About_Us_section text-center">
+            <div class="container">
+                <div class="row wow bounceInDown">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="counter_Card">
+                            <div class="icon_img">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="member">
+                                <h1><span class="counter">3,452</span>+</h1>
+                            </div>
+                            <div class="about_title">
+                                <h4>Cybersecurity Projects</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="counter_Card">
+                            <div class="icon_img">
+                                <i class="fas fa-user-lock"></i>
+                            </div>
+                            <div class="member">
+                                <h1><span class="counter">658</span>+</h1>
+                            </div>
+                            <div class="about_title">
+                                <h4>Clients Protection</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="counter_Card">
+                            <div class="icon_img">
+                                <i class="fas fa-unlock-alt"></i>
+                            </div>
+                            <div class="member">
+                                <h1><span class="counter">100</span>%</h1>
+                            </div>
+                            <div class="about_title">
+                                <h4>Service Guarantee</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="counter_Card">
+                            <div class="icon_img">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <div class="member">
+                                <h1><span class="counter">18</span>+</h1>
+                            </div>
+                            <div class="about_title">
+                                <h4>Team Experts</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- secton end  -->
+    
+         <section class="All_services_section text-center text-white mt-5 pt-5">
+             <div class="Service_section_title">
+                 <h6>Our Services</h6>
+                 <h1>What We Offer</h1>
+             </div>
+            <div class="container">
+                <div class="row All_services">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInLeft">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S1.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Security Assessment</h1>
+                                <p>Layanan Evaluasi Keamanan adalah penawaran yang kami sediakan untuk membantu organisasi melindungi aset digital mereka dan mengidentifikasi kerentanan potensial dalam infrastruktur dan aplikasi mereka. Dalam dunia yang terus berubah dengan ancaman keamanan yang semakin canggih, penilaian keamanan menjadi penting untuk memastikan perlindungan yang kuat terhadap sistem dan data berharga.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="redteam.html" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInDown">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S2.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Information Security Compliance Services</h1>
+                                <p>Memastikan bahwa keamanan siber anda memenuhi standar badan pengatur tempat anda beroperasi adalah bagian penting dari layanan kami. Kami memastikan bahwa anda dapat menjalankan bisnis tanpa rasa takut akibat kelalaian dalam hal regulasi dan perundang-undangan. Kami memastikan bahwa setiap standar dan persyaratan terpenuhi dan keamanan siber anda sesuai dengan standar praktik yang diterima di bidang anda.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInRight">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S3.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>OSINT Investigation</h1>
+                                <p>Layanan Investigasi OSINT (Open Source Intelligence) merupakan solusi canggih yang dirancang untuk membantu organisasi dan individu dalam memahami lingkungan informasi terbuka yang luas. Dalam era di mana data tersedia secara melimpah melalui internet dan sumber informasi terbuka lainnya, investigasi OSINT menjadi kunci untuk mengumpulkan, menganalisis, dan memahami data yang relevan untuk kebutuhan keamanan, analisis risiko, investigasi hukum, dan kepentingan bisnis.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="Osint.html" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInLeft">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S4.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Cyber Crime Investigation</h1>
+                                <p>Agar bisnis anda sepenuhnya sadar dan terlindungi dari serangan di masa depan, dan sebagai bagian dari proses hukum yang diperlukan jika terjadi serangan dunia maya, kami melakukan penyelidikan kejahatan dunia maya yang menganalisis dan memulihkan data digital forensik penting yang terlibat dalam sebuah serangan.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow zoomIn">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S5.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Data Security</h1>
+                                <p>Layanan Keamanan Data adalah solusi yang kami tawarkan untuk membantu organisasi dan individu menjaga integritas, kerahasiaan, dan ketersediaan data digital mereka. Dalam era di mana data menjadi aset yang sangat berharga, perlindungan data yang andal menjadi esensial untuk mencegah akses yang tidak sah, kebocoran, dan penggunaan yang tidak sah.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="all_services_card wow slideInRight">
+                            <div class="all_services_img">
+                                <img src="./img/Service-img/S6.png" alt="">
+                            </div>
+                            <div class="All_services_content">
+                                <h1>Cloud Security</h1>
+                                <p>PT. Pwn0sec Technologies menyediakan layanan platform cloud dan keamanan cloud di berbagai bidang. PT. Pwn0sec Technologies sendiri merupakan provider yang telah bersertifikat ISO 9001 dan 27001, serta memiliki sertifikasi pula pada Payment Card Industry Data Security Standard (PCI DSS) yang mendukung sektor keuangan dan perbankan.</p>
+                            </div>
+                            <div class="read_more_button">
+                                <a href="#" class="btn">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end  -->
+        <section class="new_section my-5" style="background-image: url(./img/Hacker/Group-1154.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="section_overlay text-center">
+                            <h1>Leaders In Offensive Security Exploitation Expert (OSEE)</h1>
+                            <p>Pwn0sec Cyber Security adalah salah satu perusahaan industri terkemuka yang terlibat dalam pengujian penetrasi. Kami menggunakan pendekatan ofensif untuk menginterogasi segala potensi risiko dan, dengan melakukan itu, kami mengadopsi pola pikir peretas sejati. Kami melakukan ini untuk menyediakan sistem pertahanan yang sepenuhnya dikembangkan dan sangat mudah untuk klien kami  dengan mengetahui secara pasti apa yang kami butuhkan untuk melindungi anda. Perspektif berorientasi peretas ini diterjemahkan ke setiap layanan yang kami berikan kepada klien kami. Kami selalu berusaha untuk selangkah lebih maju dari setiap potensi ancaman keamanan siber, dan oleh karena itu kami dapat memberi anda kepastian nyata dalam keselamatan organisasi anda.</p>
+                            <a href="#" class="btn common_button">READ PROJECT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end  -->
+          <!-- Meet Our Team Section -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Responsive Team Section Using HTML5, CSS3, Bootstrap 4</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+          <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+          <style>
+              body {
+                  background-color: #000;
+                  color: #fff;
+                  font-family: Arial, sans-serif;
+              }
+              .section-team {
+                  font-family: "Poppins", sans-serif;
+                  padding: 80px 0;
+              }
+              .section-team .header-section {
+                  margin-bottom: 50px;
+              }
+              .section-team .header-section .small-title {
+                  margin-bottom: 25px;
+                  font-size: 16px;
+                  font-weight: 500;
+                  color: #3e64ff;
+              }
+              .section-team .header-section .title {
+                  font-weight: 700;
+                  font-size: 45px;
+              }
+              .section-team .single-person {
+                  margin-top: 30px;
+                  padding: 30px;
+                  background-color: #000;
+                  border-radius: 5px;
+              }
+              .section-team .single-person:hover {
+                  background: linear-gradient(to right, #016cec, #00b5f7);
+              }
+              .section-team .single-person .person-image {
+                  position: relative;
+                  margin-bottom: 50px;
+                  border-radius: 50%;
+                  border: 4px dashed transparent;
+                  transition: padding .3s;
+              }
+              .section-team .single-person:hover .person-image {
+                  padding: 12px;
+                  border: 4px dashed #fff;
+              }
+              .section-team .single-person .person-image img {
+                  width: 100%;
+                  border-radius: 50%;
+              }
+              .section-team .single-person .person-image .icon {
+                  position: absolute;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translate(-50%, 50%);
+                  display: inline-block;
+                  width: 60px;
+                  height: 60px;
+                  line-height: 60px;
+                  text-align: center;
+                  background: linear-gradient(to right, #016cec, #00b5f7);
+                  color: #fff;
+                  border-radius: 50%;
+                  font-size: 24px;
+              }
+              .section-team .single-person:hover .person-image .icon {
+                  background: none;
+                  background-color: #fff;
+                  color: #016cec;
+              }
+              .section-team .single-person .person-info .full-name {
+                  margin-bottom: 10px;
+                  font-size: 28px;
+                  font-weight: 700;
+              }
+              .section-team .single-person .person-info .speciality {
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  color: #016cec;
+              }
+              .section-team .single-person .person-info {
+               text-align: center; /* Ensure text alignment is centered */
+              }
+              .section-team .single-person:hover .full-name,
+              .section-team .single-person:hover .speciality {
+                  color: #fff;
+              }
+          </style>
+      </head>
+      
+      <body>
+      
+      <section class="section-team">
+          <div class="container">
+              <!-- Start Header Section -->
+              <section class="All_services_section text-center text-white mt-5 pt-5">
+               <div class="Service_section_title">
+                <div class="container">
+                    <div class="section_title text-center py-4 mt-5">
+                    <h3 class="text-white"><span class="big_font">Our Experts</span></h3>
+                   <h6>Let's meet with our team members</h6>
+                  <div class="col-md-8 col-lg-6">
+                      </div>
+                  </div>
+              </div>
+              <!-- / End Header Section -->
+              <div class="row">
+                  <!-- Start Single Person -->
+                  <div class="col-sm-6 col-lg-4 col-xl-3">
+                      <div class="single-person">
+                          <div class="person-image">
+                              <img src="https://i.ibb.co.com/q09dTPh/11zon-cropped-47.png" alt="">
+                              <span class="icon">
+                                  <i class="fab fa-hacker"></i>
+                              </span>
+                          </div>
+                          <div class="person-info">
+                           <h3 class="full-name" style="font-size: 24px;">ANDRI</h3>
+                              <span class="speciality">Offensive Security Researcher</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- / End Single Person -->
+                  <div class="col-sm-6 col-lg-4 col-xl-3">
+                   <div class="single-person">
+                       <div class="person-image">
+                           <img src="https://i.ibb.co.com/7rTVjqT/11zon-cropped-48.png" alt="">
+                           <span class="icon">
+                               <i class="fab fa-github-simple"></i>
+                           </span>
+                       </div>
+                       <div class="person-info text-center"> <!-- Added class "text-center" for center alignment -->
+                           <h3 class="full-name" style="font-size: 24px;">MIFTAH FARIDL ROMADANI</h3> <!-- Adjusted font size to 24px -->
+                           <span class="speciality">Security Operations Center</span>
+                       </div>
+                   </div>
+               </div>                    
+                  <!-- Start Single Person -->
+                  <div class="col-sm-6 col-lg-4 col-xl-3">
+                      <div class="single-person">
+                          <div class="person-image">
+                              <img src="https://i.ibb.co.com/SdTvcWY/Untitled-design-1.png" alt="">
+                              <span class="icon">
+                                  <i class="fab fa-java"></i>
+                              </span>
+                          </div>
+                          <div class="person-info">
+                           <h3 class="full-name" style="font-size: 24px;">IKHSAN ADI PRAYOGO</h3> <!-- Adjusted font size to 24px -->
+                              <span class="speciality">Digital Forensics Analyst</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- / End Single Person -->
+                  <!-- Start Single Person -->
+                  <div class="col-sm-6 col-lg-4 col-xl-3">
+                      <div class="single-person">
+                          <div class="person-image">
+                              <img src="https://i.ibb.co.com/PGp83H2/56601353.png" alt="">
+                              <span class="icon">
+                                  <i class="fab fa-node"></i>
+                              </span>
+                          </div>
+                          <div class="person-info">
+                           <h3 class="full-name" style="font-size: 24px;">Kosong Satu</h3> <!-- Adjusted font size to 24px -->
+                              <span class="speciality">Javascript Developer</span>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- / End Single Person -->
+              </div>
+          </div>
+      </section>
+      
+      </body>
+      </html>
+      
+      <!-- Meet Our END Section -->
+        <!-- blog section start here  -->
+        <section class="Blog_section my-5 py-5 text-white">
+            <div class="Service_section_title text-center text-white">
+                <h6>Disclosure Results of the Pwn0sec Research Team</h6>
+                <h1>Latest News</h1>
+            </div>
+            <div class="container">
+                <div class="owl-carousel">
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/git.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>Gitlab Project Import RCE Analysis</small>
+                            <h1>Gitlab Project Import RCE Analysis</h1>
+                            <p>Saya mengandalkan bug sebelumnya yang dilaporkan oleh @pwn0sec untuk menganalisis bug ini. Meskipun hubungan antara kedua bug tersebut hampir tidak signifikan karena hanya titik masuknya yang sama dan semua teknik lainnya berbeda, saya sarankan Anda membacanya terlebih dahulu di sini di mana Anda akan menemukan teknik tertentu juga dapat dikaitkan dengan yang lama.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/gitlab-project-import-rce-analysis-3551b8282046" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/blog2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>PDF XSS leads to RCE</small>
+                            <h1>PDF Remote Code Injection</h1>
+                            <p>Jendela Popup (dialog) adalah komponen penting dari interaktivitas Acrobat. Jendela Popup memberikan pesan kesalahan, peringatan, dan informasi penting lainnya kepada pengguna. Mereka mengajukan pertanyaan kepada pengguna dan mengumpulkan masukan. Acrobat memiliki beberapa jenis Jendela Popup bawaan (peringatan, respons, dan file terbuka), serta fungsi untuk membuat dialog khusus.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/find-vulnerability-with-pdf-ebb3ed27ed47" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/blog-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>Pwn0sec research team discovers severe Improper Input Validation Prototype Pollution</small>
+                            <h1>Improper Input Validation Prototype Pollution </h1>
+                            <p>Kerentanan "Improper Input Validation" adalah jenis kerentanan keamanan yang umumnya ditemukan dalam aplikasi web atau perangkat lunak. Kerentanan ini terkait dengan "Prototype Pollution," yang adalah kerentanan yang memungkinkan serangan terhadap objek-objek JavaScript di lingkungan runtime.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/pwn0sec-research-team-discovers-severe-improper-input-validation-prototype-pollution-security-18d3a7201e10" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/navyforce.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>U.S. Dept Of Defense</small>
+                            <h1>Unauthenticated access to APIs and system browser functions</h1>
+                            <p>Beberapa kerentanan paparan informasi diidentifikasi dalam contoh Server Jira (akses tidak diautentikasi ke API dan fungsi browser sistem). Laporan ini menjelaskan kombinasi dua kerentanan terpisah dalam dua layanan terpisah. Rantai kerentanan ini memungkinkan penyerang yang tidak diautentikasi menjalankan kode arbitrer pada server di dalam jaringan internal perusahaan. rentan terdaftar sebagai referensi JRASERVER-73060.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://hackerone.com/reports/2126039" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/army.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>U.S. Dept Of Defense</small>
+                            <h1>CVE-2022-4137 Reflected XSS via keycloak </h1>
+                            <p>Kerentanan skrip lintas situs (XSS) yang tercermin ditemukan di titik akhir OAuth 'oob' karena penanganan byte nol yang salah. Masalah ini memungkinkan tautan jahat memasukkan URI sewenang-wenang ke halaman kesalahan Keycloak. Cacat ini mengharuskan pengguna atau administrator untuk berinteraksi dengan tautan agar menjadi rentan. Hal ini dapat membahayakan detail pengguna, sehingga dapat diubah atau dikumpulkan oleh penyerang.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://hackerone.com/reports/2126954" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/ggs.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>Google LLC</small>
+                            <h1>Server-Side Request Forgery to Internal SMTP Access</h1>
+                            <p>Pemalsuan Permintaan Sisi Server (SSRF) adalah kerentanan di mana penyerang dapat mengirimkan permintaan yang dibuat dan terkontrol melalui aplikasi yang rentan. Kita dapat berkomunikasi dengan layanan berbeda yang berjalan pada protokol berbeda dengan memanfaatkan skema URI. Membuat server mengeluarkan permintaan bukanlah kerentanan itu sendiri, namun menjadi kerentanan ketika Anda dapat membuat permintaan ke hal-hal yang biasanya tidak atau tidak boleh Anda akses, seperti jaringan internal atau layanan internal.</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/server-side-request-forgery-to-internal-smtp-access-google-scholar-fe17f3b2c7cd" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/kaltimbank.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>How I Takeover a Machine Bank used Credentials Database After got Laravel .env file</small>
+                            <h1>Sensitive Information Exposure could lead to Takeover Machine ioT</h1>
+                            <p>Bagaimana Pwn0sec mengeksploitasi file Laravel ENV untuk mendapatkan akses ke mesin bank menggunakan kredensial yang dicuri dari database. Baca kisah lengkapnya di Medium untuk mengetahui kerentanan dan cara mencegah serangan semacam itu di masa depan</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/how-i-takeover-a-machine-bank-used-credentials-database-after-got-laravel-env-file-f8e9e278bcf0" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="Blog_Card">
+                        <div class="blog_img">
+                            <img src="./img/Blog_img/polrirce.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="blog_description">
+                            <small>Apache HTTP Server Path Traversal & Remote Code Execution (RCE) Kepolisian Negara Republik Indonesia</small>
+                            <h1>CVE-2021–42013 Remote Code Execution in Apache HTTP Server</h1>
+                            <p>Kerentanan penelusuran jalur diperkenalkan karena perubahan kode baru yang ditambahkan untuk normalisasi jalur, yaitu untuk jalur URL untuk menghapus bagian yang tidak diinginkan atau berbahaya dari nama jalur, tetapi tidak cukup untuk mendeteksi teknik yang berbeda dalam mengkodekan karakter penelusuran jalur “titik-titik garis miring (../)</p>
+                        </div>
+                        <div class="read_more_button">
+                            <a href="https://pwn0sec.medium.com/apache-http-server-path-traversal-remote-code-execution-rce-kepolisian-negara-republik-68b7571181a6" class="btn common_button">READ MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog section end here  -->
+
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Achievement</title>
+    <!-- Tambahkan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Tambahkan library FancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Tambahkan Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .section_title h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .brand_img {
+            margin: 15px 0;
+        }
+        .brand_img img {
+            border: 2px solid #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .brand_img img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .wow {
+            visibility: hidden;
+        }
+    </style>
+    <!-- Tambahkan animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="section_title text-center py-4 mt-5">
+                <h3 class="text-white"><span class="big_font">Our Clients</span></h3>
+                <h4 class="text-white"><span class="small_font" style="font-size: 14px;">Hingga saat ini saya sudah menyelesaikan ribuan pekerjaan yang berhubungan dengan keamanan dari puluhan perusahaan, baik itu lokal ataupun yang bukan di Indonesia. Informasi tentang perusahaan atau organisasi yang pernah pernah atau masih bekerja sama dengan saya secara langsung atau melalui pihak ketiga hingga hari ini bisa ditemukan di halaman ini. Halaman ini akan terus diperbaharui ketika saya sudah menyelesaikan pekerjaan lainnya.</span></h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="Brand_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInUp">
+                        <a href="./img/Client/MalaysiaAirlines.png" data-fancybox="certificate" data-caption='CSIRT Jakarta : <a href="https://soc.jakarta.go.id//certificate/view?token=$2y$13$qAdCfcD9FX4p9AEUxawhpO3NGNVfz7m5pDdBFYyOyGmkKRpoa8nxO" target="_blank">Certificate ID</a>'>
+                            <img src="./img/Client/MalaysiaAirlines.png" class="img-fluid" alt="CSIRT Jakarta">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Welsfargo.png" data-fancybox="certificate" data-caption="DPR RI">
+                            <img src="./img/Client/Welsfargo.png" class="img-fluid" alt="DPR RI">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInUp">
+                        <a href="./img/Client/govukb.png" data-fancybox="certificate" data-caption="BSSN NARASumber">
+                            <img src="./img/Client/govukb.png" class="img-fluid" alt="BSSN Sumber">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Cloudflare-Logo.png" data-fancybox="certificate" data-caption="BSSN Daring Participant">
+                            <img src="./img/Client/Cloudflare-Logo.png" class="img-fluid" alt="Daring">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/IBM-logo.png" data-fancybox="certificate" data-caption="BSSN DARING II Participant">
+                            <img src="./img/Client/IBM-logo.png" class="img-fluid" alt="Daring 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/dod.png" data-fancybox="certificate" data-caption="Cisco">
+                            <img src="./img/Client/dod.png" class="img-fluid" alt="Cisco">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Stanford-University-Logo.png" data-fancybox="certificate" data-caption="Comptia">
+                            <img src="./img/Client/Stanford-University-Logo.png" class="img-fluid" alt="Comptia">
+                        </a>
+                    </div>
+                </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Hostinger_Logo.png" data-fancybox="certificate" data-caption='Certificate ID : <a href="https://tte.polri.go.id/preview/file/9c4455cd-fa84-4e72-a072-f51335dcca59" target="_blank">9c4455cd-fa84-4e72-a072-f51335dcca59</a>'>
+                            <img src="./img/Client/Hostinger_Logo.png" class="img-fluid" alt="POLRI">
+                        </a>
+                    </div>
+                </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/grab.png" data-fancybox="certificate" data-caption="BSSN Offline Narasumber Depok, Jawa Barat">
+                            <img src="./img/Client/grab.png" class="img-fluid" alt="BSSN Edukasi Penilaian Kerentanan">
+                        </a>
+                    </div>
+                </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Brave_icon_app.png" data-fancybox="certificate" data-caption="Axioo Class Program Certified">
+                            <img src="./img/Client/Brave_icon_app.png" class="img-fluid" alt="Axioo Class Program Certified">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/Starling_Bank_Logo.png" data-fancybox="certificate" data-caption="Spentera X Hacktrace">
+                            <img src="./img/Client/Starling_Bank_Logo.png" class="img-fluid" alt="Spentera X Hacktrace">
+                        </a>
+                    </div>
+                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="brand_img wow animate__animated animate__bounceInDown">
+                        <a href="./img/Client/logitech.png" data-fancybox="certificate" data-caption="">
+                            <img src="./img/Client/logitech.png" class="img-fluid" alt="">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+        });
+    </script>
+</body>
+</html>
+ <!-- Inisialisasikan FancyBox dengan script JavaScript -->
+         <script>
+             $(document).ready(function () {
+                 $("[data-fancybox='certificate']").fancybox({
+                     buttons: [
+                         "zoom",
+                         "slideShow",
+                         "fullScreen",
+                         "download",
+                         "thumbs",
+                         "close"
+                     ],
+                     animationEffect: "zoom-in-out",
+                     transitionEffect: "slide",
+                     transitionDuration: 800
+                 });
+             });
+         </script>
+         
+         </body>
+         </html>
+         
+        <!-- Brand section End -->
+
+        <footer class="text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 wow bounceInLeft">
+                        <div class="service_section_title">
+                            <h6>Contact Us</h6>
+                            <h3>Get In Touch</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>Pwn0sec Cyber adalah sebuah perusahaan teknologi informasi yang berlokasi di Jakarta dan Surabaya</p>
+                        </div>
+                        <div class="Address_section d-flex justify-content-between">
+                            <div class="home d-flex justify-content-between">
+                                <div class="address_icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="address">
+                                    <h6>Jakarta Office</h6>
+                                    <p>Gandaria 8 Office Tower Pd. Indah No.10<br/> Jakarta Selatan - 12240</p>
+                                </div>
+                            </div>
+                            <div class="home d-flex justify-content-between">
+                                <div class="address_icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="address">
+                                    <h6>Surabaya Office</h6>
+                                    <p>Jl. Ploso Timur IV<br/> Jawa Timur - 60133</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Address_section d-flex justify-content-between">
+                            <div class="home d-flex justify-content-between">
+                                <div class="address_icon">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="address ml-4">
+                                    <h6>Call Us</h6>
+                                    <p>(+62)888 802 2526</p>
+                                </div>
+                            </div>
+                            <div class="home d-flex justify-content-between">
+                                <div class="address_icon">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="address">
+                                    <h6>Email Address</h6>
+                                    <p>security@pwn0sec.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 wow bounceInRight">
+                        <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your Message..."></textarea>
+                            </div>
+                            <a href="#" class="btn common_button">Sent Message</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    
+        <!-- JQuery file  -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <!-- Popper Js -->
+        <script src="./js/popper.min.js"></script>
+        <!-- Bootstrap File -->
+        <script src="./js/bootstrap.min.js"></script>
+        <!-- font awesome link  -->
+        <script src="./js/all.min.js"></script>
+        <!-- Type js link  -->
+        <script src="./js/typed.js"></script>
+        <!-- counter up js  -->
+        <script src="./js/jquery.waypoints.js"></script>
+        <script src="./js/jquery.counterup.js"></script>
+        <!-- owl carousel link  -->
+        <script src="./js/owl.carousel.min.js"></script>
+        <!-- wow js  -->
+        <script src="./js/wow.min.js"></script>
+        <!-- Main Js -->
+        <script src="./js/main.js"></script>
+    </body>
+  <!-- Konten Halaman -->
+
+  <div class="bottom">
+    <span class="credit">Created By <a href="https://pwn0sec.com">PT. Pwn0sec Digital Technologies Ltd.</a></span>
+    <div class="copyright">
+        <span class="far fa-copyright"></span> 2024 All rights reserved.
+    </div>
+
+    <div class="image-container">
+        <img src="img/brand/pse-terdaftar.png" alt="Partner Logo">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwn0sec Technologies Ltd</title>
+    <link rel="shortcut icon" href="./img/Logo/zz.png" type="image/x-icon">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap 4 css link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- owl-carousel link  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Main css Link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom {
+            background-color: rgba(255, 255, 255, 0); /* Transparan */
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .credit {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .credit a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .image-container {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .partner-text {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section Start  -->
+    <header class="Header_section">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/Logo/pwnlab.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#Menu_bar" 
+                    aria-expanded="false">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="Menu_bar">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://hackerboard.pwn0sec.com">Hackerboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Our Services <i class="fas fa-angle-down ml-1"></i></a>
+                            <ul>
+                                <li><a href="security-assesment.html">Security Assessment</a></li>
+                                <li><a href="cybercrime-investigation.html">Cyber Crime Investigation</a></li>
+                                <li><a href="penetration-testing.html">Penetration Testing</a></li>
+                                <li><a href="osint-as-a-services.html">OSINT Investigation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research <i class="fas fa-angle-down ml-1"></i></a>
+                            <ul>
+                                <li><a href="blog.pwn0sec.com">Writeup</a></li>
+                                <li><a href="discord.pwn0sec.com">Discord</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="Button">
+                        <a href="#" class="btn common_button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section End  -->
+    <div class="problem-fix"></div>
+    <section class="page_title text-center">
+        <h1 class="display-6">
+            <span style="color: white; font-weight: bold;">Pwn0sec</span>
+            <span style="color: rgb(82, 147, 201); font-weight: bold;">OSINT as a Services</span> 
+        </h1>        
+    </section>
+    <!-- line animation section Start -->
+    <section class="animate_line_sectine mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="animate_line">
+                        <div class="animated_ball"></div>
+                        <div class="animated_ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- line animation section end -->
+   <!-- Service section Start -->
+<section class="Service_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/OffensiveOsint-logo-RGB-2.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Managed Security Services</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Dengan portofolio layanan keamanan terkelola dari Proteksi Siber Global, Anda dapat menutup celah keamanan dan memperkuat pertahanan Anda dengan percaya diri.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/01_OSS_logo_podstawowe-1.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Active Defense Services</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Layanan Pertahanan Aktif kami adalah cara cerdas untuk menunda peretas, yang pada akhirnya membuat pekerjaan mereka jauh lebih sulit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/OffensiveOsint-logo-RGB-2.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Cyber Crime Investigation Services</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Menginvestigasi kejahatan siber sangatlah rumit dan kompleks. Tugas ini membutuhkan tim penyelidik kejahatan siber yang sangat berpengalaman yang memahami teknologi dan cara berpikir peretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="service_card">
+                    <div class="service_heading">
+                        <div class="service_img">
+                            <img src="./img/section/01_OSS_logo_podstawowe-1.png" class="img-fluid" alt="card_img">
+                        </div>
+                        <div class="services_title">
+                            <h3>Active Defense Services</h3>
+                        </div>
+                    </div>
+                    <div class="services_description">
+                        <p>Layanan Pertahanan Aktif kami adalah cara cerdas untuk menunda peretas, yang pada akhirnya membuat pekerjaan mereka jauh lebih sulit.</p>
+                    </div>
+                </div>
+        </div>
+</section>
+<!-- Service section end -->
+
+         <!-- Our Services  -->
+         <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInLeft">
+                        <img src="./img/Service-img/os.gif" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInRight">
+                        <div class="service_section_title">
+                            <h6>Protect Your Presence Online</h6>
+                        </div>
+                        <div class="small_des">
+                            <p>Open Source Intelligence diselidiki untuk menemukan, memantau, dan melacak potensi ancaman siber yang dapat menimbulkan risiko bagi sistem dan keamanan bisnis Anda</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                                <div class="small_card_description">
+                                    <p>Sebagai sebuah organisasi, baik karyawan maupun fasilitas Anda terekspos pada berbagai macam serangan siber setiap harinya. Layanan Opensource Intelligence (OSINT) kami dirancang untuk mengungkap apa yang dikatakan orang tentang Anda secara online untuk membantu melindungi dan menjaga keselamatan dan keamanan Anda.</p>
+                                </div>
+                            </div>
+                            <div class="small_card">
+                                <div class="card_icon">
+                                    <img src="" class="img-fluid" alt="">
+                                </div>
+                                <div class="service_section_title">
+                                    <h6>Our Process</h6>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Dengan menggunakan kombinasi analisis kualitatif dan kuantitatif, layanan OSINT kami membantu bisnis seperti bisnis Anda untuk mengungkap apa yang dikatakan orang tentang Anda secara online.</p>
+                                </div>
+                                <div class="small_card_description">
+                                    <p>Karena internet telah menjadi pusat bagi publik untuk mengekspresikan pandangan dan pendapat mereka secara bebas, OSINT membantu mengidentifikasi dan menemukan informasi yang berharga dan berfokus pada bisnis. Data ini kemudian dikumpulkan dan diubah menjadi intelijen dan wawasan yang dapat ditindaklanjuti untuk pengambilan keputusan berbasis data. Tujuan kami adalah membantu melindungi perusahaan Anda sehingga Anda dapat memajukan bisnis Anda tanpa rasa khawatir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn common_button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Our_Services_section text-white mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 wow bounceInLeft">
+                        <div class="service_section_title">
+                            <h3>What is OSINT?</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>Sumber terbuka mengacu pada informasi yang dapat diakses oleh masyarakat umum. Ini tidak hanya ditujukan untuk halaman web dan sumber daya lain yang dapat ditemukan dari pencarian Google yang sederhana. Layanan OSINT memungkinkan akses ke situs web, basis data, file, dan sumber informasi lain yang tidak dapat diindeks oleh mesin pencari populer.</p>
+                        </div>
+                        <div class="service_section_title">
+                            <h3>Why Do I Need It?</h3>
+                        </div>
+                        <div class="small_des">
+                            <p>Informasi sumber terbuka mencakup sebagian besar konten yang ditemukan secara online. Ini termasuk data yang dipublikasikan atau disiarkan, diminta oleh publik seperti data sensus, tersedia melalui langganan atau pembelian. Informasi ini juga dapat merujuk pada informasi yang dapat dilihat atau didengar oleh pengamat biasa - dan berbagai titik akses lainnya.</p>
+                            <p>Karena ada begitu banyak cara di mana data dapat diakses atau dibicarakan, Anda memerlukan analis yang dapat menyaring lautan informasi dan memastikan perusahaan Anda terlindungi melalui bagaimana data tersebut digunakan dan didiskusikan.</p>
+                        </div>
+                        <div class="services_content_desctiption">
+                            <div class="small_card">
+                              
+                            </div>
+                        </div>
+                        <a href="#" class="btn common_button">Learn More</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 wow bounceInRight">
+                        <img src="./img/Service-img/m3.gif" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our services  -->
+        <section class="All_services_section text-center text-white mt-5 pt-5">
+            <div class="Service_section_title">
+                <h6>With Our OSINT Services, We’ll Help You Identify:</h6>
+                <h1>What We Offer</h1>
+            </div>
+           <div class="container">
+               <div class="row All_services">
+                   <div class="col-lg-4 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInLeft">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S1.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Managed Security Services</h1>
+                               <p>With Proteksi Siber Global’s portfolio of managed security services, you can close security gaps and strengthen your defenses with confidence.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="redteam.html" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInDown">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S2.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Active Defense Services</h1>
+                               <p>Our Active Defense Services are a smart way to delay hackers, ultimately making their jobs that much harder.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 col-sm-12">
+                       <div class="all_services_card wow slideInRight">
+                           <div class="all_services_img">
+                               <img src="./img/Service-img/S3.png" alt="">
+                           </div>
+                           <div class="All_services_content">
+                               <h1>Cyber Crime Investigation Services</h1>
+                               <p>Investing cybercrime is incredibly intricate and complex. The task calls for a team of deeply experienced cybercrime investigators who know technology and how hackers think.</p>
+                           </div>
+                           <div class="read_more_button">
+                               <a href="#" class="btn">Learn More<i class="fas fa-arrow-right ml-2"></i></a>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- section end  -->
+    <section class="new_section my-5" style="background-image: url(./img/Hacker/Group-1154.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section_overlay text-center">
+                        <h1>Do you want to secure wisely?</h1>
+                        <p>Contact our team experts now!</p>
+                        <a href="#" class="btn common_button">Leave us a Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end  -->
+
+
+    <!-- line animation section Start -->
+    <section class="animate_line_sectine mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="animate_line">
+                        <div class="animated_ball"></div>
+                        <div class="animated_ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- line animation section end -->
+
+<!-- Konten Halaman -->
+
+<div class="bottom">
+    <span class="credit">Created By <a href="https://pwn0sec.com">PT. Pwn0sec Digital Technologies Ltd.</a></span>
+    <div class="copyright">
+        <span class="far fa-copyright"></span> 2024 All rights reserved.
+    </div>
+
+    <div class="image-container">
+        <img src="img/brand/pse-terdaftar.png" alt="Partner Logo">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    <!-- JQuery file  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- Popper Js -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap File -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- font awesome link  -->
+    <script src="./js/all.min.js"></script>
+    <!-- Type js link  -->
+    <script src="./js/typed.js"></script>
+    <!-- counter up js  -->
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.js"></script>
+    <!-- owl carousel link  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
